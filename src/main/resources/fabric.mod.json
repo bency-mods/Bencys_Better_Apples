@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "betterapple",
+	"version": "1.0.0_1.20.4",
+	"name": "Bency's Better Apples",
+	"description": "makes the apples better innit",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/betterapple/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.bency.betterapple.BencysBetterApples"
+		],
+		"client": [
+			"net.bency.betterapple.BencysBetterApplesClient"
+		]
+	},
+	"mixins": [
+		"betterapple.mixins.json",
+		{
+			"config": "betterapple.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.6",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
