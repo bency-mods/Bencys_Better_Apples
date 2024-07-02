@@ -19,7 +19,7 @@ import org.spongepowered.asm.util.Locals;
 import javax.swing.*;
 
 public class BetterApple extends Item {
-    public BetterApple(Settings settings) {
+    public BetterApple(net.minecraft.item.Item.Settings settings) {
         super(settings);
     }
     public static final Item APPLE_1 = new Item(new Item.Settings());
